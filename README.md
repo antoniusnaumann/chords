@@ -1,3 +1,6 @@
+[![Maven Central](https://img.shields.io/maven-central/v/dev.antonius/chords)](https://search.maven.org/artifact/dev.antonius/chords)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+
 # Chords 🎶
 A small utility library to make Jetbrains/Jetpack Compose more harmonic.
 
@@ -21,6 +24,8 @@ class MainActivity : AppCompatActivity() {
     }
 }
 ```
+
+### To be continued...
 
 ## Project ⚙️
 ### Versioning 📜

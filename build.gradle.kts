@@ -4,7 +4,7 @@ import java.util.*
 
 
 plugins {
-    kotlin("multiplatform") version "1.6.20"
+    kotlin("multiplatform") version "1.6.10"
     id("org.jetbrains.compose") version "1.1.1"
     id("com.android.library")
     id("maven-publish")
@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "dev.antonius"
-version = "0.1.0"
+version = "0.1.1"
 
 repositories {
     mavenCentral()
@@ -63,7 +63,7 @@ android {
     compileSdk = 31
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdk = 24
+        minSdk = 21
         targetSdk = 31
     }
     compileOptions {

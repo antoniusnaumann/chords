@@ -3,7 +3,10 @@ package dev.antonius.compose.chords
 import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.ripple.rememberRipple
-import androidx.compose.material3.*
+import androidx.compose.material3.ColorScheme
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 
@@ -27,9 +30,6 @@ import androidx.compose.runtime.CompositionLocalProvider
  * limitations under the License.
  */
 
-private val DarkColorTheme = darkColorScheme()
-private val LightColorTheme = lightColorScheme()
-
 /**
  * @param lightScheme Fallback color scheme if dynamic color is disabled and app is in light mode
  * @param darkScheme Fallback color scheme if dynamic color is disabled and app is in dark mode
@@ -39,9 +39,9 @@ private val LightColorTheme = lightColorScheme()
  */
 @Composable
 fun DynamicTheme(
-    lightScheme: ColorScheme = LightColorTheme,
-    darkScheme: ColorScheme = DarkColorTheme,
-    typography: Typography = MaterialTheme.typography,
+    lightScheme: ColorScheme = lightColorScheme(),
+    darkScheme: ColorScheme = darkColorScheme(),
+    typography: androidx.compose.material3.Typography = MaterialTheme.typography,
     isDarkTheme: Boolean = isSystemInDarkTheme(),
     isDynamicColor: Boolean = true,
     content: @Composable () -> Unit

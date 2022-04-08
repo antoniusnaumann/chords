@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "dev.antonius"
-version = "0.1.2"
+version = "0.1.3"
 
 repositories {
     mavenCentral()
@@ -49,7 +49,11 @@ kotlin {
                 implementation(kotlin("test-annotations-common"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("androidx.compose.material3:material3:1.0.0-alpha09")
+            }
+        }
         val androidTest by getting
         val desktopMain by getting
 

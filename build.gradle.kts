@@ -35,11 +35,11 @@ kotlin {
                 implementation(kotlin("stdlib-common"))
 
                 dependencies {
-                    api(compose.runtime)
-                    api(compose.foundation)
-                    api(compose.ui)
+                    implementation(compose.runtime)
+                    implementation(compose.foundation)
+                    implementation(compose.ui)
                     @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
-                    api(compose.material3)
+                    implementation(compose.material3)
                 }
             }
         }

@@ -12,7 +12,7 @@ plugins {
 }
 
 group = "dev.antonius"
-version = "0.1.3"
+version = "0.1.4"
 
 repositories {
     mavenCentral()
@@ -120,10 +120,6 @@ publishing {
     }
 
     publications.withType<MavenPublication> {
-        groupId = group as String
-        artifactId = project.name
-        version = version
-
         artifact(javadocJar.get())
 
         pom {

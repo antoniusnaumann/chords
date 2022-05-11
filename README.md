@@ -16,8 +16,8 @@ Supports system dark mode and [Material You Dynamic Color](https://m3.material.i
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent(lightScheme = myLightColorScheme, darkScheme = myDarkColorScheme) {
-            DynamicTheme {
+        setContent {
+            DynamicTheme(lightScheme = myLightColorScheme, darkScheme = myDarkColorScheme) {
                 MyComposeView()
             }
         }
